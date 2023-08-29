@@ -1,4 +1,5 @@
 FROM node:16.18.0-alpine3.15
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 # 字体初始化 https://wiki.alpinelinux.org/wiki/Fonts
 # RUN apk add terminus-font ttf-inconsolata ttf-dejavu font-noto font-noto-cjk ttf-font-awesome font-noto-extra
